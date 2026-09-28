@@ -1,0 +1,27 @@
+CONSULTA DE FALLAS 930 - PROTOTIPO PWA
+
+Contenido
+- index.html: pantalla principal.
+- datos.js: 132 eventos de la última planilla.
+- app.js, styles.css: buscador y presentación.
+- manifest.webmanifest, sw.js, iconos: instalación y uso sin conexión tras la primera visita.
+
+Búsqueda
+- 2 y 002 abren el evento 002.
+- 2/1 y 002/01 abren el evento 002 e indican que el subcódigo 01 no está validado en la base.
+- También se puede buscar una palabra de la descripción.
+
+Para instalarla en el celular
+1. Publica TODOS los archivos de esta carpeta juntos en un sitio HTTPS, por ejemplo GitHub Pages.
+2. Abre la dirección publicada desde el navegador del celular.
+3. En Android: menú del navegador > Instalar aplicación o Agregar a pantalla principal.
+   En iPhone: menú Compartir de Safari > Agregar a pantalla de inicio.
+4. Ábrela una vez con conexión para que los datos queden disponibles sin conexión.
+
+IMPORTANTE
+La base viene de un PDF escaneado. El reconocimiento de texto no está validado
+para uso técnico. Revisa los eventos y las páginas del manual antes de seguir
+indicaciones de diagnóstico. No se han separado ni validado subcódigos.
+
+La PWA necesita publicarse mediante HTTPS para instalarse y funcionar sin conexión.
+Abrir index.html directamente desde el ZIP no instala la aplicación.

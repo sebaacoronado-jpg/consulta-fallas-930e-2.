@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#072d59">
+  <meta name="description" content="Buscador móvil de eventos 930 y sus guías de detección de fallas.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Consulta de fallas 930</title>
+</head>
+<body>
+  <header class="masthead">
+    <div class="brand"><span class="brand-mark">930</span><span>Departamento de Confiabilidad</span></div>
+    <h1>Consulta de fallas</h1>
+    <p>Ingresa un código como <strong>2</strong>, <strong>002</strong> o <strong>2/1</strong>.</p>
+  </header>
+  <main>
+    <form id="search-form" role="search" autocomplete="off">
+      <label for="query">Código o descripción del evento</label>
+      <div class="search-box"><input id="query" type="search" inputmode="search" placeholder="Ej.: 2/1 o falla a tierra" autofocus><button type="submit">Buscar</button></div>
+    </form>
+    <div class="shortcuts"><button type="button" data-example="2/1">2/1</button><button type="button" data-example="21/2">21/2</button><button type="button" data-example="619">619</button><button type="button" id="recent-toggle">Recientes</button></div>
+    <section id="message" aria-live="polite"></section>
+    <section id="results" aria-live="polite"></section>
+  </main>
+  <footer>Fuente: Troubles Shouting 930 español. Transcripción OCR en revisión; verifica la página del PDF antes de ejecutar una instrucción técnica.</footer>
+  <script src="datos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
