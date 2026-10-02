@@ -1,27 +1,18 @@
-CONSULTA DE FALLAS 930 - PROTOTIPO PWA
+CONSULTA DE FALLAS KOMATSU 930E-2 · SACC
 
-Contenido
-- index.html: pantalla principal.
-- datos.js: 132 eventos de la última planilla.
-- app.js, styles.css: buscador y presentación.
-- manifest.webmanifest, sw.js, iconos: instalación y uso sin conexión tras la primera visita.
+Actualización para GitHub Pages
 
-Búsqueda
-- 2 y 002 abren el evento 002.
-- 2/1 y 002/01 abren el evento 002 e indican que el subcódigo 01 no está validado en la base.
-- También se puede buscar una palabra de la descripción.
+1. Descomprimir el ZIP en el celular.
+2. Abrir el repositorio de consulta de fallas en GitHub.
+3. En Code, usar Add file > Upload files. Si no aparece, activar Sitio de escritorio en Chrome.
+4. Seleccionar los archivos de la raíz, incluido LEEME.txt. No subir el ZIP.
+5. Confirmar con Commit changes, en la rama main.
+6. Subir los nueve PDF dentro de la carpeta manuales del repositorio. Si no existe, crear manuales/LEEME.txt mediante Add file > Create new file y confirmar. Luego abrir manuales > Add file > Upload files y seleccionar los nueve PDF de la carpeta manuales descomprimida.
+7. En Settings > Pages, seleccionar Deploy from a branch, main y /(root), y guardar. Si ya está configurado así, conservarlo.
+8. Abrir el enlace que GitHub muestre cuando termine la publicación.
 
-Para instalarla en el celular
-1. Publica TODOS los archivos de esta carpeta juntos en un sitio HTTPS, por ejemplo GitHub Pages.
-2. Abre la dirección publicada desde el navegador del celular.
-3. En Android: menú del navegador > Instalar aplicación o Agregar a pantalla principal.
-   En iPhone: menú Compartir de Safari > Agregar a pantalla de inicio.
-4. Ábrela una vez con conexión para que los datos queden disponibles sin conexión.
+Prueba: 2/1, 02/1 y 002/1 deben mostrar los cuatro subíndices del código 002 y resaltar el primero en amarillo. El subíndice selecciona el detalle de la guía del Excel. Los subcódigos que aparezcan dentro del texto de detección se conservan como información original.
 
-IMPORTANTE
-La base viene de un PDF escaneado. El reconocimiento de texto no está validado
-para uso técnico. Revisa los eventos y las páginas del manual antes de seguir
-indicaciones de diagnóstico. No se han separado ni validado subcódigos.
-
-La PWA necesita publicarse mediante HTTPS para instalarse y funcionar sin conexión.
-Abrir index.html directamente desde el ZIP no instala la aplicación.
+Si buscas solo 2, 02 o 002, aparecen todos los detalles sin seleccionar uno.
+Favoritos e historial se guardan en cada dispositivo.
+La documentación incluida aplica al proyecto 930E-2 y conserva los alcances indicados en cada manual.
